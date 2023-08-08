@@ -51,7 +51,7 @@ public String DepositMoneyToCustomer(@PathVariable int index,@RequestBody int am
     if(customer.getBalance()>=amount){
         customer.setBalance(customer.getBalance()-amount);
         return "withdraw";
-    }else return "not enough money";
+    }else return "You don't have enough money";
     }
 
 
